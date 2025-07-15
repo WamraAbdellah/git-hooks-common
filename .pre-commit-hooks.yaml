@@ -9,3 +9,9 @@
   entry: ./hooks/prepare-commit-msg.sh
   language: script
   stages: [prepare-commit-msg]
+
+- id: pre-commit-script
+  name: Exécution du script pre-commit
+  entry: ./hooks/pre-commit.sh
+  language: script
+  stages: [pre-commit]
