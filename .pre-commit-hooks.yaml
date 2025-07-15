@@ -1,0 +1,11 @@
+- id: check-commit-msg
+  name: Vérifie format commit message
+  entry: ./hooks/commit-msg.sh
+  language: script
+  stages: [commit-msg]
+
+- id: prepare-commit-msg
+  name: Template commit message
+  entry: ./hooks/prepare-commit-msg.sh
+  language: script
+  stages: [prepare-commit-msg]
