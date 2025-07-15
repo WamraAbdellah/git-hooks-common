@@ -1,17 +1,17 @@
 - id: check-commit-msg
   name: Vérifie format commit message
-  entry: ./hooks/commit-msg.sh
+  entry: hooks/commit-msg.sh
   language: system
   stages: [commit-msg]
 
 - id: prepare-commit-msg
   name: Template commit message
-  entry: ./hooks/prepare-commit-msg.sh
+  entry: hooks/prepare-commit-msg.sh
   language: system
   stages: [prepare-commit-msg]
 
 - id: pre-commit-script
   name: Exécution du script pre-commit
-  entry: ./hooks/pre-commit.sh
+  entry: hooks/pre-commit.sh
   language: system
   stages: [pre-commit]
