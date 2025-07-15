@@ -5,8 +5,8 @@ setup(
     version="0.1.0",
     py_modules=[],
     scripts=[
-        "hooks/commit_msg_check.py",
+        "hooks/commit_msg.py",
         "hooks/prepare_commit_msg.py",
-        "hooks/mvn_checks.py",
+        "hooks/pre_commit.py",
     ],
 )
