@@ -1,17 +1,17 @@
 - id: check-commit-msg
   name: Vérifie format commit message
-  entry: hooks/commit_msg.py
+  entry: commit_msg.py
   language: python
   stages: [commit-msg]
 
 - id: prepare-commit-msg
   name: Template commit message
-  entry: hooks/prepare_commit_msg.py
+  entry: prepare_commit_msg.py
   language: python
   stages: [prepare-commit-msg]
 
 - id: pre-commit-script
   name: Exécution du script pre-commit
-  entry: hooks/pre_commit.py
+  entry: pre_commit.py
   language: python
   stages: [pre-commit]
